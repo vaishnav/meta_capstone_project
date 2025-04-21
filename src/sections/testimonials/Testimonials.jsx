@@ -10,19 +10,23 @@ const Testimonials = () => {
   const users = [
     {
       name : 'John',
-      image: person1
+      image: person1,
+      rating: 5
     },
     {
       name : 'Mary',
-      image: person2
+      image: person2,
+      rating: 5
     },
     {
-      name : 'Joanne',
-      image: person3
+      name : 'Ben',
+      image: person3,
+      rating: 4
     },
     {
-      name : 'Kim',
-      image: person4
+      name : 'Harold',
+      image: person4,
+      rating: 4
     },
   ]
 

@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       <div className='about-img'>
-        <img src={about_img} alt="Mario and Adrian" />
+        <img src={about_img} alt="Mario and Adrian" className="w-[90%] h-auto object-contain rounded-2xl"/>
       </div>
     </section>
   )
