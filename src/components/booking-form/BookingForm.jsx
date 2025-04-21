@@ -34,48 +34,48 @@ const BookingForm = ({ submitForm }) => {
 
   return (
     <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-      <Form className="max-w-md mx-auto">
-        <div className="mb-4">
-          <label htmlFor="firstName" className="block mb-2">
+      <Form className="w-full max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg pb-4">
+        <div className="mb-6">
+          <label htmlFor="firstName" className="block text-sm font-semibold mb-2 text-gray-700">
             First Name
           </label>
           <Field
             type="text"
             id="firstName"
             name="firstName"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
-          <ErrorMessage name="firstName" component="div" className="text-red-500" />
+          <ErrorMessage name="firstName" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
-        <div className="mb-4">
-          <label htmlFor="lastName" className="block mb-2">
+        <div className="mb-6">
+          <label htmlFor="lastName" className="block text-sm font-semibold mb-2 text-gray-700">
             Last Name
           </label>
           <Field
             type="text"
             id="lastName"
             name="lastName"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
-          <ErrorMessage name="lastName" component="div" className="text-red-500" />
+          <ErrorMessage name="lastName" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
-        <div className="mb-4">
-          <label htmlFor="email" className="block mb-2">
+        <div className="mb-6">
+          <label htmlFor="email" className="block text-sm font-semibold mb-2 text-gray-700">
             Email
           </label>
           <Field
             type="email"
             id="email"
             name="email"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
-          <ErrorMessage name="email" component="div" className="text-red-500" />
+          <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
-        <div className="mb-4">
-          <label htmlFor="guests" className="block mb-2">
+        <div className="mb-6">
+          <label htmlFor="guests" className="block text-sm font-semibold mb-2 text-gray-700">
             Number of Guests
           </label>
           <Field
@@ -84,33 +84,33 @@ const BookingForm = ({ submitForm }) => {
             name="guests"
             min="1"
             max="10"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
-          <ErrorMessage name="guests" component="div" className="text-red-500" />
+          <ErrorMessage name="guests" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
-        <div className="mb-4">
-          <label htmlFor="date" className="block mb-2">
+        <div className="mb-6">
+          <label htmlFor="date" className="block text-sm font-semibold mb-2 text-gray-700">
             Choose Date
           </label>
           <Field
             type="date"
             id="date"
             name="date"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
-          <ErrorMessage name="date" component="div" className="text-red-500" />
+          <ErrorMessage name="date" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
-        <div className="mb-4">
-          <label htmlFor="time" className="block mb-2">
+        <div className="mb-6">
+          <label htmlFor="time" className="block text-sm font-semibold mb-2 text-gray-700">
             Choose Time
           </label>
           <Field
             as="select"
             id="time"
             name="time"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           >
             <option value="">Select Time</option>
             <option value="17:00">17:00</option>
@@ -120,30 +120,30 @@ const BookingForm = ({ submitForm }) => {
             <option value="21:00">21:00</option>
             <option value="22:00">22:00</option>
           </Field>
-          <ErrorMessage name="time" component="div" className="text-red-500" />
+          <ErrorMessage name="time" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
-        <div className="mb-4">
-          <label htmlFor="occasion" className="block mb-2">
+        <div className="mb-6">
+          <label htmlFor="occasion" className="block text-sm font-semibold mb-2 text-gray-700">
             Occasion
           </label>
           <Field
             as="select"
             id="occasion"
             name="occasion"
-            className="w-full px-3 py-2 border border-gray-300 rounded"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           >
             <option value="">Select Occasion</option>
             <option value="Birthday">Birthday</option>
             <option value="Anniversary">Anniversary</option>
           </Field>
-          <ErrorMessage name="occasion" component="div" className="text-red-500" />
+          <ErrorMessage name="occasion" component="div" className="text-red-500 text-sm mt-1" />
         </div>
 
         <div className="text-center">
           <button
             type="submit"
-            className="px-4 py-2 my-4 hover:scale-105 duration-200"
+            className="px-6 py-3 w-full bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500"
           >
             Make Your Reservation
           </button>
