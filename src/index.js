@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Homepage from './pages/homepage/HomePage.jsx';
+import Homepage from './pages/homepage/Homepage.jsx';
 import BookingPage from './pages/booking_page/BookingPage.jsx';
 import ConfirmedBooking from './pages/confirmed_booking/ConfirmedBooking.jsx';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
